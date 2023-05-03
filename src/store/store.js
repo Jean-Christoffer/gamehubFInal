@@ -70,7 +70,7 @@ function storeRow(value, inputValue, gameList){
       gameCard.className = 'game-card'
   
       const detailsAnchor = document.createElement('a')
-      detailsAnchor.href= `./details/details.html?id=${game.id}`
+      detailsAnchor.href= `../details/details.html?id=${game.id}`
   
       const gameImage = document.createElement('img')
       gameImage.src=`${game.images[0].thumbnail}`
