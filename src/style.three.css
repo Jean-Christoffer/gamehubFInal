@@ -1,0 +1,236 @@
+@font-face {
+  font-family: "Smack Laideth Down 2019";    /* Reference: https://www.dafont.com/smack-laideth-down-2019.font */
+  src: url("/fonts/Smack\ Laideth\ Down\ 2019.otf");
+}
+:root{
+  --primary-color-gold: #BE9C37; /* Reference: https://color.adobe.com/ */
+  --primary-color-black:#0C1014;
+  --main-font: 'Inter', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body,html{
+
+
+    background: black;
+    color: rgb(0, 0, 0);
+    font-family: "Smack Laideth Down 2019";    
+  }
+
+  .webgl{
+    position: fixed;
+    overflow: hidden;
+    inset:0;
+    z-index:-1;
+    background: 'black';
+    outline: none;
+  }
+  h1{
+    font-size: 2rem;
+    text-align: center;
+    -webkit-text-stroke:1px #BE9C37;
+    z-index: 150;
+  }
+  h2{
+    font-size: 1.3rem;
+    text-align: center;
+    z-index: 150;
+    -webkit-text-stroke:0.5px #BE9C37;
+
+  }
+  main{
+    z-index: 2;
+    text-align: center;
+    margin-top: 15px;
+   
+
+  }
+  body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .cta-container{
+    width: fit-content;
+   margin: auto;
+
+  }
+
+  @media(min-width:40rem){
+    h1{
+      font-size: 3rem;
+      -webkit-text-stroke:1.5px #BE9C37;
+    }
+    h2{
+      font-size: 2.5rem;
+      -webkit-text-stroke:1px #BE9C37;
+    }
+  }
+
+.cta{
+  text-align: center;
+  text-decoration: none;
+  background-color:var(--primary-color-gold);
+  padding: 10px 50px;
+  border-radius: 3px;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--black);
+  margin: 10px;
+  display: block;
+  border: none;
+  font-family: var(--main-font);
+  font-weight: bold;
+}
+a{
+  text-decoration: none;
+
+}
+.price-platform-container{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+}
+.game-title, .platform{
+  color: white;
+}
+.platform{
+  padding: 10px;
+  margin-right: 10px;
+}
+.game-section{
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  flex-wrap: wrap;
+  gap:10px;
+  row-gap: 50px;
+  max-width: 1000px;
+  border-radius: 15px;
+  z-index: 200;
+  position: relative;
+}
+.featured-title{
+  font-size: 2rem;
+  -webkit-text-stroke:0.5px #BE9C37;
+
+}
+.game-wrapper{
+  margin-top: 255px;
+}
+.game-card{
+  width: min(100%, 230px);
+  background:var(--primary-color-black);
+  border: 1.5px solid var(--primary-color-gold);
+  border-radius: 5px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;;
+}
+.game-card p{
+  text-align: left;
+  padding: 5px 0px 5px 8px;
+}
+.price{
+  color: var(--primary-color-gold);
+}
+.game-title{
+  font-weight: bold;
+}
+.game-cover-img{
+  margin-top: 10px;
+  background-size:cover;
+  width: 150px;
+  border-radius: 5px;
+}
+
+@media (min-width:24rem)  {
+  .game-wrapper{
+    margin-top: 345px;
+
+  }
+}
+
+@media (min-width: 50rem){
+  main{
+    margin: 50px;
+  }
+  .game-section{
+      gap:20px;
+      row-gap: 100px;
+  }
+  .game-card{
+      width: min(100%, 190px);
+  }
+  .game-card:hover{
+      transform: translateY(-5px);
+      transform: scale(1.08);
+      transition-duration: 0.4s;
+      box-shadow: 0px 4px 4px 1px var(--primary-color-gold);
+  }
+
+}
+
+
+/*Loader*/
+.spinner {
+
+  display: none;
+}
+.spinner.show{
+  animation: rotator 1.4s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+}
+
+@keyframes rotator {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(270deg);
+  }
+}
+.path {
+  stroke-dasharray: 187;
+  stroke-dashoffset: 0;
+  transform-origin: center;
+  animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+}
+
+@keyframes colors {
+  0% {
+    stroke: #4285f4;
+  }
+  25% {
+    stroke: #de3e35;
+  }
+  50% {
+    stroke: #f7c223;
+  }
+  75% {
+    stroke: #1b9a59;
+  }
+  100% {
+    stroke: #4285f4;
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 187;
+  }
+  50% {
+    stroke-dashoffset: 46.75;
+    transform: rotate(135deg);
+  }
+  100% {
+    stroke-dashoffset: 187;
+    transform: rotate(450deg);
+  }
+}

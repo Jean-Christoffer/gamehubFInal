@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="your shopping cart">
+    <title>GameHub || Cart</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="./main.js" defer type="module"></script>
+    <script src="./cart.js" defer type="module"></script>
+    <script src="https://kit.fontawesome.com/7cc6ea881f.js" crossorigin="anonymous"></script>
+    <script src="./checkout.js" defer type="module"></script>
+</head>
+
+<body class="overlay-body">
+    <div class="overlay"></div>
+    <header>
+        <i class="fa-solid fa-bars fa-xl hamburger-menu"></i>
+        <a href="../index.html" aria-label="company logo, also works as home button"><img id="logo"
+                src="/images/gamehublogo.png" alt="logo"></a>
+        <nav class="nav-menu">
+            <ul class="nav-ul">
+
+                <li><a href="../store/store.html"><i class="fa-solid fa-store mobile-logo"></i> Games</a></li>
+                <li><a href="../about/about.html"><i class="fa-solid fa-circle-info mobile-logo"></i> About</a></li>
+                <li><a href="../contact/contact.html"><i class="fa-solid fa-square-phone mobile-logo"></i> Contact</a></li>
+            </ul>
+        </nav>
+
+        <i class="fa-solid fa-cart-shopping fa-xl cart-icon">
+            <div class="cart-hover-amount">0</div>
+          </i>
+          
+          <div class="cart-menu">
+            <h2 class="amount-items-cart">0</h2>
+            <svg
+            class="spinner"
+            width="65px"
+            height="65px"
+            viewBox="0 0 66 66"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              class="path"
+              fill="none"
+              strokeWidth="6"
+              strokeLinecap="round"
+              cx="33"
+              cy="33"
+              r="30"
+            ></circle>
+          </svg>
+            <div class="cart-items flex">
+              
+
+                        
+            </div>
+            <div class="checkout-wrapper">
+              <div class="price-info-total">Subtotal: $0</div>
+              <a class="cta" href="./checkout.html">CHECKOUT</a>
+            </div>
+        </div>
+   
+    </header>
+    <main>
+
+            <form class="checkout-form">
+                <fieldset class="checkout-fieldset">
+                    <legend><h3 class="total-price-checkout"></h3></legend>
+                    <div class="input-container">
+                        <label for="full-name">Full name</label>
+                        <input type="text" name="full-name" required id="full-name" class="clear" placeholder="John Johnson">
+                        <p class="error"></p>
+                    </div>
+                    <div class="input-container">
+                        <label for="mail">Email</label>
+                        <input type="email" name="mail" required id="mail" class="clear" placeholder="example@mail.com">
+                        <p class="error"></p>
+                    </div>
+                    <div class="input-container">
+                        <label for ="cc">CC Number</label>
+                        <input type="number" name="cc" required id="cc" class="clear" placeholder="Card number 16 digits">
+                        <p class="error"></p>
+                    </div>
+                    <div class="month-year-container">
+                        <div class="input-container">
+                            <label for="month-year">Date of birth</label>
+                            <input type="date" name="month-year" required id="month-year" class="clear">
+                            <p class="error"></p>
+                        </div>
+                        <div class="input-container">
+                            <label for="cvc">CVC</label>
+                            <input type="number" name="cvc" required id="cvc" class="clear"  placeholder="123">
+                            <p class="error"></p>
+                        </div>
+                    </div>
+                    <div class="snackBar-checkout">hello</div>
+                </fieldset>
+                <button  type="submit" class="cta buy-now">BUY NOW</button>
+                <button  type="submit" class="cta paypal">PayPal</button>               
+            </form>
+        </section>
+    </main>
+    <footer>
+        <ul class="social-media-links" aria-label="social media links">
+            <li><a href="https://www.facebook.com/" target="_blank" aria-label="facebook"><i
+                        class="fa-brands fa-square-facebook fa-xl"></i></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank" aria-label="instagram"><i
+                        class="fa-brands fa-instagram fa-xl"></i></a>
+            </li>
+            <li><a href="https://www.youtube.com/" target="_blank" aria-label="youtube"><i
+                        class="fa-brands fa-youtube fa-xl"></i></a></li>
+        </ul>
+        <p class="copyright">Copyright Ⓒ Game Hub: 2022: All rights reserved</p>
+        <address class="address">
+            <div class="address-wrapper">
+                <p>Address:</p>
+                <p>TheAddress 25</p>
+                <p>0255 Oslo</p>
+            </div>
+        </address>
+    </footer>
+</body>
+
+</html>

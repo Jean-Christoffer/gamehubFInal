@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" class="about-page">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get to know the team at GameHub">
+    <title>GameHub || About us</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script src="./main.js" defer type="module"></script>
+    <script src="./about.js" defer type="module"></script>
+    <script src="https://kit.fontawesome.com/7cc6ea881f.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="overlay-body">
+    <div class="overlay"></div>
+    <header>
+        <i class="fa-solid fa-bars fa-xl hamburger-menu"></i>
+        <a href="../index.html" aria-label="company logo, also works as home button"><img id="logo"
+                src="/images/gamehublogo.png" alt="logo"></a>
+        <nav class="nav-menu">
+            <ul class="nav-ul">
+
+                <li><a href="../store/store.html"><i class="fa-solid fa-store mobile-logo"></i> Games</a></li>
+                <li><a href="../about/about.html" class="active-page"><i class="fa-solid fa-circle-info mobile-logo"></i> About</a></li>
+                <li><a href="../contact/contact.html"><i class="fa-solid fa-square-phone mobile-logo"></i> Contact</a></li>
+            </ul>
+        </nav>
+
+        <i class="fa-solid fa-cart-shopping fa-xl cart-icon">
+            <div class="cart-hover-amount">0</div>
+          </i>
+          
+          <div class="cart-menu">
+            <h2 class="amount-items-cart">0</h2>
+            <svg
+            class="spinner"
+            width="65px"
+            height="65px"
+            viewBox="0 0 66 66"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              class="path"
+              fill="none"
+              strokeWidth="6"
+              strokeLinecap="round"
+              cx="33"
+              cy="33"
+              r="30"
+            ></circle>
+          </svg>
+            <div class="cart-items flex">
+>
+    
+                        
+            </div>
+            <div class="checkout-wrapper">
+              <div class="price-info-total">Subtotal: $0</div>
+              <a class="cta" href="../checkout/checkout.html">CHECKOUT</a>
+            </div>
+        </div>
+   
+    </header>
+    <main>
+        <div class="about-section flex">
+            <div class="who-are-we-container flex">
+                    <article class="about-text">
+                        <h1 class="about-title">Who are we ?</h1>
+                        <p>Our mission is to create a hub for gamers to buy, sell and socialize.
+                            we focus on selling digital games thus lowering the cost for our users.
+                            Finished a game and don't want it to sit and collect dust? sell it on the marketplace!
+                            We also host social events each month please feel free to contact us with any questions.
+                        </p>
+                    </article>
+
+                    <div class="life-style-container">
+                        <h2 class="universe-of-games">Universe of games</h2>
+                        <img src="images/lifestyle.jpg" class="universe-img" alt="picture of vr">
+                    </div>
+                    
+                <div class="location-container">
+                    <h2 class="find-us-title">Find us here</h2>
+                        <div class="map-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4355.61221404639!2d10.77479919934963!3d59.9643785566666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464171ddee072adf%3A0x7af824371689e560!2sKjels%C3%A5s%2C%200491%20Oslo!5e0!3m2!1sno!2sno!4v1675929951364!5m2!1sno!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="contact-info-container flex">
+                            <p><i class="fa-solid fa-phone fa-lg"></i> +47123456</p>
+                            <p><i class="fa-solid fa-envelope fa-lg"></i> hub@gmail.com</p>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <ul class="social-media-links" aria-label="social media links">
+            <li><a href="https://www.facebook.com/" target="_blank" aria-label="facebook"><i
+                        class="fa-brands fa-square-facebook fa-xl"></i></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank" aria-label="instagram"><i
+                        class="fa-brands fa-instagram fa-xl"></i></a>
+            </li>
+            <li><a href="https://www.youtube.com/" target="_blank" aria-label="youtube"><i
+                        class="fa-brands fa-youtube fa-xl"></i></a></li>
+        </ul>
+        <p class="copyright">Copyright Ⓒ Game Hub: 2022: All rights reserved</p>
+        <address class="address">
+            <div class="address-wrapper">
+                <p>Address:</p>
+                <p>TheAddress 25</p>
+                <p>0255 Oslo</p>
+            </div>
+        </address>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/Flip.min.js"></script>
+    
+</body>
+
+</html>
