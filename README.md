@@ -12,5 +12,6 @@ The site architecture are as follows<br>
 - About
 - Contact
 #### https://gamehub-f-inal.vercel.app/
+#### Fetches products from WP
 #### Credits: 3d Assets (Snes controller on landing page)
 (https://sketchfab.com/3d-models/snes-pal-controller-332c4b913ca1421b8b6001dc0b7a214b) by kwstasg (https://sketchfab.com/kwstasg) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
