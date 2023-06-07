@@ -1,4 +1,4 @@
-# 2022-03-11_HTML-CSS_CA_Game Hub_Jean-Christoffer-Dahl
+# Gamehub
 
 
 Slogan: The universe of games
