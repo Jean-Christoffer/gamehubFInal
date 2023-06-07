@@ -1,12 +1,18 @@
 # Gamehub
 
-Game Hub is a online game shop where users can buy and sell digital games.
-Game Hub is targeted audience are people in the age from 18 to 25. 
-
 ## Screenshots
 
 ![App Screenshot](src/public/images/screenshot.jpg)
 
+## Description
+
+Game Hub is a online game shop where users can buy and sell digital games.
+Game Hub is targeted audience are people in the age from 18 to 25.
+
+## Features
+- Add to cart 
+- Search
+- Sort
 
 ## Built with
 
@@ -17,8 +23,6 @@ Game Hub is targeted audience are people in the age from 18 to 25.
 - Vite
 ## Installation
 
-
-
 ```bash
 git clone https://github.com/Jean-Christoffer/gamehubFinal.git
 
@@ -26,13 +30,6 @@ cd gamehubfinal
 
 npm install
 ```
-    
-
-
-## Features
-- Add to cart 
-- Search
-- Sort
 
 ### Acknowledgements
 
