@@ -23,14 +23,17 @@ Game Hub is targeted audience are people in the age from 18 to 25.
 - Vite
 ## Installation
 
+1. clone repo
 ```bash
 git clone https://github.com/Jean-Christoffer/gamehubFinal.git
 
 cd gamehubfinal
 
+```
+2. install dependencies
+```bash
 npm install
 ```
-
 ### Acknowledgements
 
 #### 3d Assets 
