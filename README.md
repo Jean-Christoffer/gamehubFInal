@@ -21,6 +21,7 @@ Game Hub is targeted audience are people in the age from 18 to 25.
 - Javascript
 - Wordpress REST API
 - Vite
+- Landing page done in three.js
 ## Installation
 
 1. clone repo
